@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <title>练习</title>
+  <link rel="stylesheet" type="text/css" href="css/vue.css">
+  <script type="text/javascript" src="js/vue.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div id="Dialogue">
+  <div class="dialogue-box" id="rtt">
+    <ul id="dia-ul">
+      <template v-for="txt in txts">{{{txt.message}}}</template>
+    </ul>
+  </div>
+  <div id="navdialogue" class="navdialogue">
+    <div class="dialogue-txt">
+      <div class="txt-input">
+        <input  v-on:keyup.enter="addTodo" v-model="newTodo"/>
+        <span class="input-ico"></span>
+      </div>
+      <span v-on:click="show=!show" class="file-btn"></span>
+    </div>
+    <div class="dialogue-file-box" v-if="show" transition="expand">
+      <ul>
+        <li v-for="item in items">{{{item.message}}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
