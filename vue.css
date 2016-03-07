@@ -1,0 +1,235 @@
+@charset "utf-8";
+html {
+    font-family:"黑体", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    height: 100%;
+    color: #535353;
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    line-height: 1.5;
+    color: #535353;
+    background: #eeeced;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #4e4e4e;
+}
+a:active {
+    outline: 0;
+}
+a:active {
+    color: #006699;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b,
+strong {
+    font-weight: bold;
+}
+img {
+    border: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input {
+    line-height: normal;
+    border: 0 none;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+html,
+button,
+input,
+select,
+textarea {
+    font-family:"黑体", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+form,
+blockquote {
+    margin: 0;
+}
+ul,
+ol,
+li,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    list-style: none outside none;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #cccccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#Dialogue{ display: block;height: 100%; box-sizing: border-box; overflow:hidden;}
+.dialogue-box{padding:1.1rem .833333rem 6rem; }
+.dialogue-box li{ position: relative; padding: 0 20% 0 15%; min-height: 5rem; margin-bottom: 1.5rem;}
+.dialogue-box li:last-child{ margin-bottom: 0;}
+.dialogue-box li .avatar-img{  max-width: 5rem; max-height: 5rem;  position: absolute; display: block; left: 0; top: .4rem; width: 10.5%; }
+.dialogue-box li .avatar-img img{ width: 100%; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+.dialogue-con:after{ content: ''; display: table; clear: both;}
+.dialogue-con h3{ margin-bottom: .32rem; font-size: 1.4rem; color: #999; font-weight: 100;}
+.dialogue-con h3 span{ margin-left: 1.25rem;}
+.dialogue-con .sub-txt{ display: inline-block; position: relative; background: #fff; padding: .6666667rem; -webkit-border-radius: .8rem; -moz-border-radius: .8rem; border-radius: .8rem;}
+.dialogue-con .sub-txt img{ margin-top: .5rem; max-width: 100%; max-height: 16rem;}
+.dialogue-con .sub-txt:before{ content: ''; display: block; position: absolute; left: -1rem; top: .7rem; background: url("../images/ico.png") no-repeat .12rem 0; background-size: 30rem; width: 1rem; height: 1rem;}
+.dialogue-con .sub-txt p{ font-size: 1.6rem; color: #333; line-height: 2rem;}
+.dialogue-box li.dialogue-me{ padding: 0 15% 0 20%; }
+.dialogue-box li.dialogue-me .avatar-img{ left: auto; right: 0;}
+li.dialogue-me .dialogue-con .sub-txt{ float: right; background: #7275a8; }
+li.dialogue-me .dialogue-con .sub-txt:before{ left: auto; right: -1rem; background-position:-3.35rem -2.4rem ;}
+li.dialogue-me .dialogue-con .sub-txt p{ word-break: break-all; color: #fff;}
+li.dialogue-me .dialogue-con h3{ text-align: right;}
+
+.navdialogue{ position: fixed; left: 0; bottom: 0; width: 100%; background: #ffffff; padding: .7rem .9rem; -webkit-box-shadow: 0 -2px 3px #ddd; -moz-box-shadow: 0 -2px 3px #ddd; box-shadow: 0 -2px 3px #ddd;}
+.navdialogue .dialogue-txt{ padding: 0 3.5rem 0 0; position: relative;}
+.navdialogue .dialogue-txt .file-btn{ position: absolute; right: 0; top: 0; background: url("../images/ico.png") no-repeat -5.3rem .25rem; background-size: 18rem; width: 2.5rem; height: 2.5rem; display: block;}
+.navdialogue .dialogue-txt .txt-input{ position: relative; background: #f1eff0; border: 1px solid #ddd; height: 2.6rem; padding: .5rem 3rem .5rem .5rem;}
+.navdialogue .dialogue-txt .txt-input .input-ico{ position: absolute; right: .5rem; top: .5rem; background: url("../images/ico.png") no-repeat -2.1rem 0; background-size: 13rem; width: 1.7rem; height: 1.6rem; display: block;}
+.navdialogue .dialogue-txt .txt-input input{ font-size: 1.4rem; background: #f1eff0; width: 100%; height: 1.6rem; line-height: 1.6rem;}
+
+.dialogue-file-box{ margin: 0 -1rem; }
+.dialogue-file-box ul{padding: .9rem 0 0;}
+.dialogue-file-box li{ width: 20%; float: left;}
+.dialogue-file-box li span{ display: block; margin: 0 auto; background: url("../images/ico.png") no-repeat .3rem -2.7rem; width: 2.5rem; height: 2.5rem; background-size: 12rem;}
+.dialogue-file-box li p{ padding-top: .4rem; font-size: 1.4rem; line-height: 1.2; text-align: center;}
+.dialogue-file-box li .packet-ico{ background-position: -2rem -2.6rem;}
+.dialogue-file-box li .card-ico{ background-position: -7rem -2.3rem;}
+.dialogue-file-box li .video-ico{ background-position: -4.5rem -2.6rem;}
+.dialogue-file-box li .voice-ico{ background-position: -9.5rem -2.5rem;}
+
+.expand-transition {
+    transition: all .4s ease;
+    overflow: hidden;
+    height: 5rem;
+}
+.expand-enter, .expand-leave {
+    height: 0;
+    opacity: 0;
+}
+@keyframes myfirst
+{
+    0%   { max-width: 0; left:50%; top:50%;}
+    50%  {max-width:50%; left:25%; top:25%;}
+    100% {max-width:100%; left:0; top:0;}
+}
+
+.loading{ position: fixed; left: 0; top: 0; background: #000; width: 100%; height: 100%; z-index: 99;}
+.dialogue-con .sub-txt .Bigimg{ left: 0; top: 0; position: fixed; z-index: 999; max-width: 100%; max-height: 100%;  animation:myfirst 0s;}
+
+
+@media screen and (min-device-width: 415px) and (max-device-width: 540px){
+    html{
+        font-size: 90%;
+    }
+}
+@media screen and (max-device-width: 414px) {
+    html{
+        font-size: 69%;
+    }
+}
+@media screen and (max-device-width: 375px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-device-width: 320px) {
+    html{
+        font-size: 53.3333%;
+    }
+}
